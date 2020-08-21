@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+</head>
+
+<body>
+    <h1>Biblioteca Virtual</h1>
+    <h2>Bem-Vindo</h2>
+    <br>
+    <h3>Endpoints utilizados:</h3>
+    <ol>
+        <li>GET: http://localhost:5000/api/books</li>
+        <li>GET: http://localhost:5000/api/books/4</li>
+        <li>POST: http://localhost:5000/api/books
+            <ul>
+                <li>application/json</li>
+                <li>
+                    <code>
+                        {
+                        "title":"Flask 2",
+                        "author":"Luciano R",
+                        "read": true
+                        }
+                    </code>
+                </li>
+            </ul>
+        </li>
+        <li>GET: http://localhost:5000/api/books/search?title=Flask</li>
+        <li>PUT: localhost:5000/api/books/1
+            <ul>
+                <li>application/json</li>
+                <li>
+                    <code>
+                        {
+                        "title":"Flask 2",
+                        "author":"Luciano R",
+                        "read": true
+                        }
+                    </code>
+                </li>
+            </ul>
+        </li>
+        <li>DELETE: localhost:5000/api/books/1</li>
+    </ol>
+
+</body>
+
+</html>
